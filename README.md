@@ -73,5 +73,5 @@ Quando um usuário realiza uma compra, o sistema:
 
 ## Contato
 
-Para dúvidas ou sugestões, entre em contato pelo email: [hugo.leoanrdo.jobs@gmail.com](mailto:hugo.leoanrdo.jobs@gmail.com).
+Para dúvidas ou sugestões, entre em contato pelo email: [hugo.leonardo.jobs@gmail.com](mailto:hugo.leonardo.jobs@gmail.com).
 
