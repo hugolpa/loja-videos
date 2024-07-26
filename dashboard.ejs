@@ -1,0 +1,41 @@
+<%- include('layout', { body: `
+    <h1>Dashboard</h1>
+    <p>Bem-vindo, <%= usuario.nome %>!</p>
+    <a href="/pagamento" class="btn btn-primary">Comprar Vídeo</a>
+  ` }) %>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Loja de Vídeos</title>
+  <!-- Incluindo Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4">Selecione um vídeo para comprar</h1>
+    <form action="/pay" method="POST">
+      <div class="form-group">
+        <label for="fileId">Escolha o vídeo:</label>
+        <select class="form-control" id="fileId" name="fileId">
+          <option value="16b54fU-1Y90tKHF0alIrOk6zvT89fIuK">VID_20230722_131233.mp4</option>
+          <option value="15nxhyM1p_Svph725WU5HhmJjBXkT9Lwd">Longo-worship-chinelo.mp4</option>
+          <option value="1vBwzeXXr9RuN3YLqFmB6mFBG-N2GN_yc">dirty-feet-worship.mp4</option>
+          <option value="109Rjl1G_Ltl9gJ6bHJvf-11x45_kkWSb">meu sub</option>
+          <option value="1G6K5MMcvWbvALp6DOFy-fqdOyrNfRMEY">PTT-20230717-WA0024.opus</option>
+          <option value="1EATmwc_x23y046vML6sTgrQHv1Z9fc8U">PTT-20230709-WA0014.opus</option>
+          <option value="1DVxhJ_JQ9broMddTuE2eGsCebsRAmxfC">PTT-20230706-WA0022.opus</option>
+          <option value="1Iachnd2SAnMyqlqsyRm6BSwhinLCqUgP">IMG-20230822-WA0009.jpg</option>
+          <option value="1I_pUTZc9HPaJsfmRjgUhXvtjvg7TXnX2">IMG-20230821-WA0045.jpg</option>
+          <option value="1IRN1eBrShCDAqp-UsR7WFrcAJFS4_Vee">PTT-20230821-WA0014.opus</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Pagar</button>
+    </form>
+  </div>
+
+  <!-- Incluindo Bootstrap JS e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
